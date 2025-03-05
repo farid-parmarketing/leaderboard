@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leadership board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar p-2">
+      <div class="container p-2 glass">
+        <div>
+          <h1 class="logo">LOGO</h1>
+        </div>
+        <div class="discord-login pe-2">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/018/930/500/non_2x/discord-logo-discord-icon-transparent-free-png.png"
+            alt=""
+          />
+          <p>Login</p>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div class="container py-4 px-2">
+      <h1 class="text-center">LEADERBOARD</h1>
+
+      <div class="tabs mt-5 mx-auto p-2" id="tabs"></div>
+
+      <h1 class="text-center my-4">Rs. 5000</h1>
+
+      <h2 class="text-center mb-2">Leaderboards end in</h2>
+
+      <div class="timer-flex">
+        <div class="timer-box glass">
+          <h2>26</h2>
+          <p>Days</p>
+        </div>
+        <div class="timer-box glass">
+          <h2>14</h2>
+          <p>Hours</p>
+        </div>
+        <div class="timer-box glass">
+          <h2>31</h2>
+          <p>Mins</p>
+        </div>
+        <div class="timer-box glass">
+          <h2>56</h2>
+          <p>secs</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container winner-grid" id="winner-grid">
+      <div class="winner-card glass">
+        <div class="rank">
+          <h2>1</h2>
+        </div>
+
+        <div class="winner-img">
+          <img
+            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </div>
+        <p class="winner-name">Winner Name</p>
+
+        <div class="mt-3">
+          <p class="text-uppercase text-muted">wagered</p>
+          <p class="winner-wagered"><span class="color1-text">Rs</span> 2764</p>
+        </div>
+
+        <div class="prize-box">
+          <p class="winner-wagered"><span class="color1-text">Rs</span> 6729</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container winner-table-container py-4 px-2">
+      <div class="w-100">
+        <div class="winners-table-head mb-3">
+          <p>Rank</p>
+          <p>user</p>
+          <p>Wagered</p>
+          <p>Prize</p>
+        </div>
+
+        <div class="winners-table" id="winners-table">
+          <div class="winners-table-body glass">
+            <p><span class="color1-text">#</span> 4</p>
+            <p>Winner name</p>
+            <p><span class="color1-text">Rs</span> 1234</p>
+            <p><span class="color1-text">Rs</span> 1234</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid p-2 pt-0">
+      <div class="container p-2 glass">
+        <div class="footer-flex">
+          <div>
+            <h1 class="mb-2">LOGO</h1>
+            <p>Copyright &copy; Company name, 2025</p>
+          </div>
+          <div>
+            <ul class="social-icons">
+              <li>
+                <a href="javascript:void(0)"
+                  ><i class="fa-brands fa-discord"></i
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium, soluta.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/data/tabs.js"></script>
+    <script src="./assets/data/winners.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+@media screen and (max-width: 992px) {
+  .winner-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .prize-box {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .winner-grid {
+    grid-template-columns: 300px;
+    gap: 60px;
+  }
+  .winner-grid .order-md-2 {
+    transform: translateY(0);
+  }
+  .prize-box {
+    width: 150px;
+  }
+}

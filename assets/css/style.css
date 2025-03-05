@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "karmatic";
+  src: url(../fonts/karmatic.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/poppins.ttf);
+}
+:root {
+  --color1: #04f982;
+  --color2: #6762ee;
+  --radius: 6px;
+}
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background: url(../images/background5.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar {
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.logo {
+  text-transform: uppercase;
+}
+.discord-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #000;
+  border-radius: var(--radius);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.discord-login img {
+  width: 50px;
+  aspect-ratio: 1;
+}
+.discord-login p {
+  color: #5865f2;
+}
+h1 {
+  font-size: 2.5rem;
+  font-family: "karmatic";
+  color: #fff;
+  margin: 0;
+}
+h2 {
+  font-size: 2rem;
+  font-family: "poppins";
+  color: #fff;
+  margin: 0;
+}
+p,
+button,
+li,
+a,
+th,
+td {
+  font-size: 1rem;
+  font-family: "poppins";
+  color: #fff;
+  margin: 0;
+}
+.glass {
+  background: #ffffff40;
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  backdrop-filter: blur(8px);
+  border-radius: var(--radius);
+  border: 1px solid #ffffff2e;
+  color: #fff;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: fit-content;
+  border-radius: var(--radius);
+}
+.tabs .tab {
+  cursor: pointer;
+  text-align: center;
+  padding: 4px 24px;
+}
+.tabs .tab h2 {
+  text-transform: capitalize;
+}
+.timer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.timer-box {
+  text-align: center;
+  padding: 8px 24px;
+}
+.winner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 300px));
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 100px 8px 50px;
+}
+.winner-card {
+  padding: 8px 8px 48px;
+  position: relative;
+  text-align: center;
+}
+.rank {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color1);
+}
+.rank h2 {
+  color: var(--color2);
+}
+.winner-img {
+  width: 100px;
+  height: 100px;
+  margin: 24px auto 8px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.winner-name,
+.winner-wagered {
+  font-weight: bold;
+  font-size: 20px;
+}
+.color1-text {
+  color: var(--color1);
+}
+.prize-box {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: var(--color2);
+  width: 200px;
+  padding: 8px;
+  border-radius: var(--radius);
+  border: 2px solid var(--color1);
+}
+.winner-grid .order-md-2 {
+  transform: translateY(-50px);
+}
+.winner-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+.winners-table {
+  width: 100%;
+}
+.winners-table-head,
+.winners-table-body {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr 2fr;
+}
+.winners-table-head p {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.winners-table-body {
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.social-icons {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  list-style: none;
+}
+.social-icons li a {
+  width: 40px;
+  height: 40px;
+  background: var(--color2);
+  color: var(--color1);
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 50%;
+}
