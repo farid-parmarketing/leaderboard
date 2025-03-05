@@ -24,7 +24,8 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  background: url(../images/background5.jpg) center no-repeat;
+  background: url("https://farid-parmarketing.github.io/leaderboard/assets/images/background5.jpg")
+    center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
