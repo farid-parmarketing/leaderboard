@@ -20,20 +20,18 @@
   .winners-table-body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    padding: 8px;
   }
-  .winners-table-body p:nth-child(1) {
+  .winners-table-body .wt-rank {
     grid-area: 2 / 1 / 3 / 2;
   }
-  .winners-table-body p:nth-child(2) {
+  .winners-table-body .wt-name {
     grid-area: 1 / 2 / 2 / 4;
   }
-  /* .winners-table-body p:nth-child(3) {
-    grid-area: 2 / 1 / 3 / 2;
-  } */
-  .winners-table-body p:nth-child(3) {
+  .winners-table-body .wt-wagered {
     grid-area: 2 / 2 / 3 / 4;
   }
-  .winners-table-body p:nth-child(4) {
+  .winners-table-body .wt-prize {
     grid-area: 3 / 2 / 4 / 4;
   }
 }

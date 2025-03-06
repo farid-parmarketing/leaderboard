@@ -92,7 +92,7 @@ let winnersTableBox = "";
 
 winnersData.slice(0, 3).map((item) => {
   winnersGridBox += `
-        <div class="winner-card glass order-md-${item.order}">
+        <div class="winner-card glass-dark order-md-${item.order}">
         <div class="rank">
           <h2>${item.rank}</h2>
         </div>
@@ -120,12 +120,20 @@ winnersGrid.innerHTML = winnersGridBox;
 
 winnersData.slice(3, winnersData.length).map((item) => {
   winnersTableBox += `
-        <div class="winners-table-body glass">
+        <div class="winners-table-body glass-dark">
+          <div class="wt-rank">
             <p><span class="color1-text">#</span> ${item.rank}</p>
-            <p>${item.name}</p>
-            <p><span class="color1-text">Rs</span> ${item.wagered}</p>
-            <p><span class="color1-text">Rs</span> ${item.prize}</p>
           </div>
+          <div class="wt-name">
+            <p>${item.name}</p>
+          </div>
+          <div class="wt-wagered">
+            <p><span class="color1-text">#</span> ${item.wagered}</p>
+          </div>
+          <div class="wt-prize">
+            <p><span class="color1-text">#</span> ${item.prize}</p>
+          </div>
+        </div>
     `;
 });
 winnersTable.innerHTML = winnersTableBox;
