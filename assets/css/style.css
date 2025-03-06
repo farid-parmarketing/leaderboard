@@ -8,12 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 @font-face {
-  font-family: "karmatic";
-  src: url(../fonts/karmatic.ttf);
+  font-family: "black_street";
+  src: url(../fonts/black_street.ttf);
 }
 @font-face {
-  font-family: "poppins";
-  src: url(../fonts/poppins.ttf);
+  font-family: "tactic";
+  src: url(../fonts/tactic.ttf);
 }
 :root {
   --color1: #04f982;
@@ -28,29 +28,34 @@ body {
     url("https://farid-parmarketing.github.io/leaderboard/assets/images/background5.jpg")
       center / cover no-repeat;
 }
-.navbar {
-  width: 100%;
-}
 img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.navbar-container {
+.nav-bar {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 0 !important;
+}
+.navbar-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
 }
-.logo {
-  text-transform: uppercase;
+.tactic-font {
+  font-family: "tactic";
 }
 .discord-login {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  background: #000;
+  background: var(--color1);
   border-radius: var(--radius);
   cursor: pointer;
   text-transform: uppercase;
@@ -64,13 +69,12 @@ img {
 }
 h1 {
   font-size: 2.5rem;
-  font-family: "karmatic";
   color: #fff;
   margin: 0;
 }
 h2 {
   font-size: 25px;
-  font-family: "poppins";
+  font-family: "tactic";
   color: #fff;
   margin: 0;
 }
@@ -81,12 +85,12 @@ a,
 th,
 td {
   font-size: 1rem;
-  font-family: "poppins";
+  font-family: "tactic";
   color: #fff;
   margin: 0;
 }
 .glass-dark {
-  background: #ffffff40;
+  background: #00000050;
   box-shadow: 0 8px 32px 0 #1f26875e;
   backdrop-filter: blur(15px);
   border-radius: var(--radius);
@@ -127,6 +131,9 @@ td {
   text-align: center;
   padding: 8px 16px;
 }
+.timer-box h2 {
+  color: var(--color1);
+}
 .winner-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 300px));
@@ -150,10 +157,11 @@ td {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: var(--color1);
+  background: var(--color2);
+  border: 2px solid var(--color1);
 }
 .rank h2 {
-  color: var(--color2);
+  color: var(--color1);
 }
 .winner-img {
   width: 100px;
@@ -169,6 +177,9 @@ td {
 }
 .color1-text {
   color: var(--color1);
+}
+.color2-text {
+  color: var(--color2);
 }
 .prize-box {
   position: absolute;
@@ -231,22 +242,14 @@ td {
   font-size: 20px;
   border-radius: 50%;
 }
-.winners-table-body .wt-rank p {
-  position: relative;
-  width: fit-content;
-  margin-left: 8px;
+footer {
+  border-radius: 0 !important;
 }
-.winners-table-body .wt-rank p::before {
-  content: "";
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #31313131;
-  box-shadow: 0 8px 32px 0 #1f26875e;
-  backdrop-filter: blur(4px);
-  border-radius: var(--radius);
-  border: 1px solid #ffffff2e;
+.text-muted {
+  color: #5b6065bf !important;
+}
+.main-title {
+  text-align: center;
+  font-size: 128px;
+  font-family: "black_street";
 }
