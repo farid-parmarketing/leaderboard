@@ -128,10 +128,10 @@ winnersData.slice(3, winnersData.length).map((item) => {
             <p>${item.name}</p>
           </div>
           <div class="wt-wagered">
-            <p><span class="color1-text">#</span> ${item.wagered}</p>
+            <p><span class="color1-text">Rs</span> ${item.wagered}</p>
           </div>
           <div class="wt-prize">
-            <p><span class="color1-text">#</span> ${item.prize}</p>
+            <p><span class="color1-text">Rs</span> ${item.prize}</p>
           </div>
         </div>
     `;

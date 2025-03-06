@@ -25,7 +25,7 @@ let tabsBox = "";
 const currentPage = window.location.pathname.split("/").pop();
 
 tabsData.map((item) => {
-  const isActive = item.link === currentPage ? "glass-dark" : "";
+  const isActive = item.link === currentPage ? "active" : "";
 
   tabsBox += `
       <div class="tab ${isActive}">

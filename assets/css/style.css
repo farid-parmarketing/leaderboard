@@ -50,22 +50,12 @@ img {
 .tactic-font {
   font-family: "tactic";
 }
-.discord-login {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  background: var(--color1);
+.nav-login-btn {
+  background: var(--color2);
   border-radius: var(--radius);
   cursor: pointer;
   text-transform: uppercase;
-}
-.discord-login img {
-  width: 50px;
-  aspect-ratio: 1;
-}
-.discord-login p {
-  color: #5865f2;
+  padding: 8px 16px;
 }
 h1 {
   font-size: 2.5rem;
@@ -90,7 +80,7 @@ td {
   margin: 0;
 }
 .glass-dark {
-  background: #00000050;
+  background: #141d2ebf;
   box-shadow: 0 8px 32px 0 #1f26875e;
   backdrop-filter: blur(15px);
   border-radius: var(--radius);
@@ -114,9 +104,17 @@ td {
   border-radius: var(--radius);
 }
 .tabs .tab {
+  width: 200px;
+  height: 75px;
   cursor: pointer;
   text-align: center;
   padding: 4px 24px;
+  border-radius: var(--radius);
+  display: grid;
+  place-items: center;
+}
+.tabs .tab.active {
+  background: linear-gradient(#00703a, var(--color1));
 }
 .tabs .tab h2 {
   text-transform: capitalize;
@@ -235,7 +233,6 @@ td {
   width: 40px;
   height: 40px;
   background: var(--color2);
-  color: var(--color1);
   display: grid;
   place-items: center;
   text-decoration: none;
@@ -250,6 +247,11 @@ footer {
 }
 .main-title {
   text-align: center;
-  font-size: 128px;
+  font-size: 8rem;
   font-family: "black_street";
+}
+.prize-money {
+  font-size: 3.5rem;
+  font-family: "tactic";
+  text-shadow: 0 0 20px #7058f6;
 }
