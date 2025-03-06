@@ -17,4 +17,23 @@
   .prize-box {
     width: 150px;
   }
+  .winners-table-body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .winners-table-body p:nth-child(1) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .winners-table-body p:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+  /* .winners-table-body p:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2;
+  } */
+  .winners-table-body p:nth-child(3) {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  .winners-table-body p:nth-child(4) {
+    grid-area: 3 / 2 / 4 / 4;
+  }
 }

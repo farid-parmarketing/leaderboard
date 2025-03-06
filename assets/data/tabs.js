@@ -1,7 +1,7 @@
 const tabsData = [
   {
     name: "tab 1",
-    link: "index1.html",
+    link: "index.html",
     icons: "",
     img: "",
   },
