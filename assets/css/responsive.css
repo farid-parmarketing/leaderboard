@@ -9,7 +9,8 @@
 @media screen and (max-width: 767px) {
   .winner-grid {
     grid-template-columns: 300px;
-    gap: 60px;
+    gap: 100px;
+    padding: 50px 8px;
   }
   .winner-grid .order-md-2 {
     transform: translateY(0);
@@ -42,10 +43,13 @@
   .social-icons {
     justify-content: flex-start;
   }
+  .winner-grid .order-md-2 {
+    transform: translateY(0) !important;
+  }
 }
 @media screen and (max-width: 576px) {
   .main-title {
-    font-size: 5rem;
+    font-size: 20vw;
   }
   .tabs .tab {
     width: 120px;
@@ -70,5 +74,8 @@
   }
   .winner-grid {
     grid-template-columns: 1fr;
+  }
+  .prize-money {
+    font-size: 2.5rem;
   }
 }

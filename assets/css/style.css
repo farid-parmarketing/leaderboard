@@ -149,25 +149,25 @@ td {
   padding: 8px 8px 48px;
   position: relative;
   text-align: center;
-  -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  /* -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
 }
-.winner-card.order-md-2 {
+/* .winner-card.order-md-2 {
   -webkit-animation: slide-top-2 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important;
   animation: slide-top-2 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important;
-}
+} */
 .rank {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: grid;
   place-items: center;
-  border-radius: 50%;
   background: var(--color2);
-  border: 2px solid var(--color1);
+  border: 5px solid var(--color1);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 .rank h2 {
   color: var(--color1);
@@ -175,7 +175,7 @@ td {
 .winner-img {
   width: 100px;
   height: 100px;
-  margin: 24px auto 8px;
+  margin: 36px auto 8px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -223,7 +223,6 @@ td {
 }
 .winners-table-body {
   padding: 16px 8px;
-  margin-bottom: 20px;
 }
 .footer-flex {
   display: flex;
