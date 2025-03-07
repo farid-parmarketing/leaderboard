@@ -120,7 +120,7 @@ winnersGrid.innerHTML = winnersGridBox;
 
 winnersData.slice(3, winnersData.length).map((item) => {
   winnersTableBox += `
-        <div class="winners-table-body glass-dark">
+        <div class="winners-table-body glass-dark" data-aos="fade-up">
           <div class="wt-rank">
             <p><span class="color1-text">#</span> ${item.rank}</p>
           </div>

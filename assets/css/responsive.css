@@ -43,3 +43,32 @@
     justify-content: flex-start;
   }
 }
+@media screen and (max-width: 576px) {
+  .main-title {
+    font-size: 5rem;
+  }
+  .tabs .tab {
+    width: 120px;
+    height: 60px;
+    padding: 4px 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .timer-flex {
+    justify-content: center;
+    gap: 8px;
+  }
+  .timer-box {
+    width: 56px;
+    height: 60px;
+  }
+  .timer-box h2 {
+    font-size: 20px;
+  }
+  .timer-box p {
+    font-size: 14px;
+  }
+  .winner-grid {
+    grid-template-columns: 1fr;
+  }
+}
