@@ -96,16 +96,19 @@ td {
   color: #fff;
 }
 .tabs {
-  display: flex;
+  width: 600px !important;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  width: fit-content;
+  gap: 8px;
   border-radius: var(--radius);
+  margin: 24px auto;
+  padding: 8px;
 }
 .tabs .tab {
-  width: 200px;
-  height: 75px;
+  width: 100%;
+  height: 75px !important;
   cursor: pointer;
   text-align: center;
   padding: 4px 24px;
@@ -224,6 +227,9 @@ td {
 .winners-table-body {
   padding: 16px 8px;
 }
+.winners-table-body .text-muted {
+  display: none;
+}
 .footer-flex {
   display: flex;
   align-items: center;
@@ -265,4 +271,89 @@ footer {
   font-size: 3.5rem;
   font-family: "tactic";
   text-shadow: 0 0 20px #7058f6;
+}
+.flying-objects-container {
+  overflow: hidden !important;
+  position: relative;
+}
+.flying-objects-container .object {
+  width: 180px;
+  height: 180px;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+  position: absolute;
+  animation: objects 5s infinite alternate-reverse ease-in-out;
+}
+.flying-objects-container .object1 {
+  top: 0;
+  left: 0;
+}
+.flying-objects-container .object2 {
+  top: 100px;
+  right: 0;
+}
+.flying-objects-container .object3 {
+  bottom: 150px;
+  left: 0;
+}
+.flying-objects-container .object4 {
+  bottom: 100px;
+  right: 0;
+}
+@keyframes objects {
+  from {
+    transform: translateY(0) scale(0.9);
+  }
+  to {
+    transform: translateY(50px) scale(1);
+  }
+}
+
+/*  */
+.flying-objects-container .object1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px; /* Slightly bigger than the object */
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 215, 0, 0.7) 20%,
+    rgba(255, 215, 0, 0) 80%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Puts it behind the object */
+  opacity: 0.8;
+  animation: glowEffect 1.5s infinite alternate ease-in-out;
+}
+.flying-objects-container .object4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px; /* Slightly bigger than the object */
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(15, 115, 197, 0.7) 20%,
+    rgba(255, 215, 0, 0) 80%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Puts it behind the object */
+  opacity: 0.8;
+  animation: glowEffect 1.5s infinite alternate ease-in-out;
+}
+@keyframes glowEffect {
+  from {
+    opacity: 0.5;
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(15px);
+  }
 }

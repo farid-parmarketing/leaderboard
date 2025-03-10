@@ -6,6 +6,11 @@
     width: 150px;
   }
 }
+@media screen and (max-width: 650px) {
+  .tabs {
+    width: 100% !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .winner-grid {
     grid-template-columns: 300px;
@@ -46,15 +51,29 @@
   .winner-grid .order-md-2 {
     transform: translateY(0) !important;
   }
+  .flying-objects-container .object3 {
+    bottom: 50%;
+  }
+  .flying-objects-container .object4 {
+    bottom: 50%;
+  }
+  .winners-table-head {
+    display: none;
+  }
+  .winners-table-body .text-muted {
+    display: inline;
+  }
 }
 @media screen and (max-width: 576px) {
   .main-title {
     font-size: 20vw;
   }
-  .tabs .tab {
-    width: 120px;
-    height: 60px;
-    padding: 4px 16px;
+  .flying-objects-container .object {
+    width: 150px;
+    height: 150px;
+  }
+  .flying-objects-container .object2 {
+    top: 150px;
   }
 }
 @media screen and (max-width: 450px) {
