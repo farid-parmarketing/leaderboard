@@ -63,6 +63,9 @@
   .winners-table-body .text-muted {
     display: inline;
   }
+  .flying-objects-container .object {
+    opacity: 0.75;
+  }
 }
 @media screen and (max-width: 576px) {
   .main-title {
@@ -71,6 +74,7 @@
   .flying-objects-container .object {
     width: 150px;
     height: 150px;
+    opacity: 0.75;
   }
   .flying-objects-container .object2 {
     top: 150px;
