@@ -1,5 +1,5 @@
 const tabsData = [
-  { name: "tab 1", link: "index.html", icons: "", img: "" },
+  { name: "tab 1", link: "/", icons: "", img: "" },
   { name: "tab 2", link: "index2.html", icons: "", img: "" },
   { name: "tab 3", link: "index3.html", icons: "", img: "" },
   { name: "tab 4", link: "index4.html", icons: "", img: "" },
