@@ -81,6 +81,12 @@
     top: 150px;
   }
 }
+@media screen and (max-width: 575px) {
+  .modal-header,
+  .modal-body {
+    padding: 8px !important;
+  }
+}
 @media screen and (max-width: 450px) {
   .timer-flex {
     justify-content: center;

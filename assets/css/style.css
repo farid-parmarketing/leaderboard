@@ -19,6 +19,7 @@ html {
   --color1: #04f982;
   --color2: #6762ee;
   --radius: 6px;
+  --transition: all 0.5s ease-in-out;
 }
 body {
   width: 100%;
@@ -103,7 +104,7 @@ td {
   justify-content: center;
   gap: 8px;
   border-radius: var(--radius);
-  margin: 24px auto;
+  margin: 16px auto 24px;
   padding: 8px;
 }
 .tabs .tab {
@@ -271,6 +272,7 @@ footer {
   font-size: 3.5rem;
   font-family: "tactic";
   text-shadow: 0 0 20px #7058f6;
+  width: fit-content;
 }
 .flying-objects-container {
   overflow: hidden !important;
@@ -356,4 +358,31 @@ footer {
     opacity: 1;
     filter: blur(15px);
   }
+}
+.glass-hover-button {
+  width: fit-content;
+  padding: 8px 16px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.glass-hover-button:hover {
+  background: #31313131;
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  backdrop-filter: blur(4px);
+  border-radius: var(--radius);
+  border: 1px solid #ffffff2e;
+}
+.modal-content {
+  background: #0c121e !important;
+}
+.modal-header {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+.modal-close-button {
+  background: transparent !important;
+  border: none !important;
+  font-size: 25px !important;
 }

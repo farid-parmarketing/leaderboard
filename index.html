@@ -82,15 +82,25 @@
           >
         </h1>
 
-        <div class="owl-carousel tabs glass-dark" id="tabs"></div>
+        <div class="text-center mt-2">
+          <h2>Switch Between Leaderboards</h2>
+          <div class="owl-carousel tabs glass-dark" id="tabs"></div>
+          <h2
+            class="glass-hover-button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            click here to learn how to compete
+          </h2>
+        </div>
 
-        <h1
-          class="text-center my-4 prize-money"
+        <!-- <h1
+          class="text-center my-4 prize-money glass-dark p-4 py-2 mx-auto"
           data-aos="zoom-in"
           data-aos-duration="1500"
         >
           <span class="color1-text">Rs</span> 5000
-        </h1>
+        </h1> -->
       </div>
       <!--  -->
 
@@ -205,7 +215,52 @@
       </div>
     </footer>
     <!--  -->
-
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header justify-content-between">
+            <h2 id="exampleModalLabel">How to compete</h2>
+            <button
+              class="modal-close-button"
+              type="button"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-4">
+              <h2>Option 1</h2>
+              <ul>
+                <li>
+                  Signup using my code here -
+                  <a href="#">https://roobet.com/?ref=gumbo</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-4">
+              <h2>Option 2</h2>
+              <ul>
+                <li>In the bottom left corner click "REDEEM"</li>
+                <li>Type "GUMBO" in the promotional code text box.</li>
+                <li>Click "REDEEM"</li>
+              </ul>
+            </div>
+            <p class="text-muted">
+              All players who are active and use code "GUMBO" will automatically
+              be entered into the Roobet.com Monthly leaderboard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
