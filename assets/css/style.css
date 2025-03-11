@@ -25,7 +25,7 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #00000000 10%, #000000 100%),
+  background: linear-gradient(to bottom, #00000000 1%, #000000 100%),
     url("https://farid-parmarketing.github.io/leaderboard/assets/images/background5.jpg")
       center / cover no-repeat;
 }

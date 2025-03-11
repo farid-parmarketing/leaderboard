@@ -4,49 +4,51 @@ const tabsData = [
     link: "index.html",
     icons: "",
     img: "/assets/images/tabs/roobet.png",
+    active: true,
   },
   {
     name: "tab 2",
     link: "index2.html",
     icons: "",
     img: "/assets/images/tabs/raingg.png",
+    active: false,
   },
   {
     name: "tab 3",
     link: "index3.html",
     icons: "",
     img: "/assets/images/tabs/clashgg.png",
+    active: false,
   },
   {
     name: "tab 4",
     link: "index4.html",
     icons: "",
     img: "/assets/images/tabs/empiredrop.png",
+    active: false,
   },
   {
     name: "tab 5",
     link: "index5.html",
     icons: "",
     img: "/assets/images/tabs/csgobig.png",
+    active: false,
   },
   {
     name: "tab 6",
     link: "index6.html",
     icons: "",
     img: "/assets/images/tabs/casesgg.png",
+    active: false,
   },
 ];
 
 const tabsGrid = document.getElementById("tabs");
 let tabsBox = "";
 
-const currentPage = window.location.pathname.split("/").pop();
-
 tabsData.forEach((item) => {
-  const isActive = item.link === currentPage ? "active" : "";
-
   tabsBox += `
-      <div class="tab ${isActive}">
+      <div class="tab ${item.active === true ? "active" : ""}">
           <img src=${item.img} alt="tab-img" />
       </div>
     `;

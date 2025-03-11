@@ -65,7 +65,7 @@
     display: inline;
   }
   .flying-objects-container .object {
-    opacity: 0.75;
+    opacity: 0.5 !important;
   }
 }
 @media screen and (max-width: 576px) {
@@ -75,7 +75,6 @@
   .flying-objects-container .object {
     width: 150px;
     height: 150px;
-    opacity: 0.75;
   }
   .flying-objects-container .object2 {
     top: 150px;
