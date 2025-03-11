@@ -6,8 +6,9 @@
     width: 150px;
   }
 }
-@media screen and (max-width: 650px) {
-  .tabs {
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100% !important;
     width: 100% !important;
   }
 }
