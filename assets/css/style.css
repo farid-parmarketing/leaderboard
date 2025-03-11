@@ -327,37 +327,24 @@ footer {
 }
 
 /*  */
-.flying-objects-container .object1::before {
+.flying-objects-container .object::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   width: 200px; /* Slightly bigger than the object */
   height: 200px;
-  background: radial-gradient(circle, #ffd700b3 20%, rgba(255, 215, 0, 0) 80%);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: -1; /* Puts it behind the object */
   opacity: 0.8;
   animation: glowEffect 1.5s infinite alternate ease-in-out;
 }
+.flying-objects-container .object1::before {
+  background: radial-gradient(circle, #ffd700b3 20%, #ffd70000 80%);
+}
 .flying-objects-container .object4::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px; /* Slightly bigger than the object */
-  height: 200px;
-  background: radial-gradient(
-    circle,
-    rgba(15, 115, 197, 0.7) 20%,
-    rgba(255, 215, 0, 0) 80%
-  );
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1; /* Puts it behind the object */
-  opacity: 0.8;
-  animation: glowEffect 1.5s infinite alternate ease-in-out;
+  background: radial-gradient(circle, #0f73c5b3 20%, #ffd70000 80%);
 }
 @keyframes glowEffect {
   from {
@@ -395,4 +382,7 @@ footer {
   background: transparent !important;
   border: none !important;
   font-size: 25px !important;
+}
+.black-background {
+  background: linear-gradient(180deg, transparent 0%, #000000 100%);
 }
