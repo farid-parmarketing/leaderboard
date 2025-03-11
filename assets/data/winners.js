@@ -7,7 +7,7 @@ const winnersData = [
     wagered: 2649,
     prize: 500,
     order: 2,
-    icon: "/assets/images/winners/icons/winner2.png",
+    icon: "https://farid-parmarketing.github.io/leaderboard/assets/images/winners/icons/winner2.png",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const winnersData = [
     wagered: 2380,
     prize: 450,
     order: 1,
-    icon: "/assets/images/winners/icons/winner1.png",
+    icon: "https://farid-parmarketing.github.io/leaderboard/assets/images/winners/icons/winner1.png",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const winnersData = [
     wagered: 2150,
     prize: 400,
     order: 3,
-    icon: "/assets/images/winners/icons/winner3.png",
+    icon: "https://farid-parmarketing.github.io/leaderboard/assets/images/winners/icons/winner3.png",
   },
   {
     id: 4,
