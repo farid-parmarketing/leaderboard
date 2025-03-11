@@ -153,33 +153,70 @@ td {
   padding: 8px 8px 48px;
   position: relative;
   text-align: center;
-  /* -webkit-animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
 }
-/* .winner-card.order-md-2 {
-  -webkit-animation: slide-top-2 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important;
-  animation: slide-top-2 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important;
-} */
 .rank {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   display: grid;
   place-items: center;
-  background: var(--color2);
-  border: 5px solid var(--color1);
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
-.rank h2 {
-  color: var(--color1);
+.rank1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75px; /* Slightly bigger than the object */
+  height: 75px;
+  background: radial-gradient(
+    circle,
+    rgb(27, 152, 255) 20%,
+    rgba(255, 215, 0, 0) 80%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Puts it behind the object */
+  opacity: 0.8;
+  z-index: -1;
+  animation: glowEffect 1.5s infinite alternate ease-in-out;
+}
+.rank2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75px; /* Slightly bigger than the object */
+  height: 75px;
+  background: radial-gradient(circle, #ffd700b3 20%, rgba(255, 215, 0, 0) 80%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Puts it behind the object */
+  opacity: 0.8;
+  z-index: -1;
+  animation: glowEffect 1.5s infinite alternate ease-in-out;
+}
+.rank3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75px; /* Slightly bigger than the object */
+  height: 75px;
+  background: radial-gradient(circle, #fff 20%, rgba(255, 215, 0, 0) 80%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Puts it behind the object */
+  opacity: 0.8;
+  z-index: -1;
+  animation: glowEffect 1.5s infinite alternate ease-in-out;
 }
 .winner-img {
   width: 100px;
   height: 100px;
-  margin: 36px auto 8px;
+  margin: 42px auto 8px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -320,11 +357,7 @@ footer {
   left: 50%;
   width: 200px; /* Slightly bigger than the object */
   height: 200px;
-  background: radial-gradient(
-    circle,
-    rgba(255, 215, 0, 0.7) 20%,
-    rgba(255, 215, 0, 0) 80%
-  );
+  background: radial-gradient(circle, #ffd700b3 20%, rgba(255, 215, 0, 0) 80%);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: -1; /* Puts it behind the object */

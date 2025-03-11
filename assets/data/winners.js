@@ -7,6 +7,7 @@ const winnersData = [
     wagered: 2649,
     prize: 500,
     order: 2,
+    icon: "/assets/images/winners/icons/winner2.png",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const winnersData = [
     wagered: 2380,
     prize: 450,
     order: 1,
+    icon: "/assets/images/winners/icons/winner1.png",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const winnersData = [
     wagered: 2150,
     prize: 400,
     order: 3,
+    icon: "/assets/images/winners/icons/winner3.png",
   },
   {
     id: 4,
@@ -90,11 +93,13 @@ const winnersTable = document.getElementById("winners-table");
 let winnersGridBox = "";
 let winnersTableBox = "";
 
-winnersData.slice(0, 3).map((item) => {
+winnersData.slice(0, 3).map((item, index) => {
   winnersGridBox += `
-        <div class="winner-card glass-dark order-md-${item.order}" data-aos="fade-up" data-aos-duration="1500">
-        <div class="rank">
-          <h2>${item.rank}</h2>
+        <div class="winner-card glass-dark order-md-${
+          item.order
+        }" data-aos="fade-up" data-aos-duration="1500">
+        <div class="rank rank${index + 1}">
+          <img src=${item.icon} />
         </div>
 
         <div class="winner-img">
@@ -107,11 +112,15 @@ winnersData.slice(0, 3).map((item) => {
 
         <div class="mt-3">
           <p class="text-uppercase text-muted">wagered</p>
-          <p class="winner-wagered"><span class="color1-text">Rs</span> ${item.wagered}</p>
+          <p class="winner-wagered"><span class="color1-text">Rs</span> ${
+            item.wagered
+          }</p>
         </div>
 
         <div class="prize-box">
-          <p class="winner-wagered"><span class="color1-text">Rs</span> ${item.prize}</p>
+          <p class="winner-wagered"><span class="color1-text">Rs</span> ${
+            item.prize
+          }</p>
         </div>
       </div>
     `;
