@@ -375,7 +375,7 @@ footer {
   border: 1px solid #ffffff2e;
 }
 .modal-content {
-  background: #0c121e !important;
+  /* background: #0c121e !important; */
 }
 .modal-header {
   background: transparent !important;
