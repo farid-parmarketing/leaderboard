@@ -95,7 +95,7 @@ let winnersTableBox = "";
 
 winnersData.slice(0, 3).map((item, index) => {
   winnersGridBox += `
-        <div class="winner-card glass-dark order-md-${
+        <div class="winner-card theme-bg order-md-${
           item.order
         }" data-aos="fade-up" data-aos-duration="1500">
         <div class="rank rank${index + 1}">
@@ -127,7 +127,7 @@ winnersData.slice(3, winnersData.length).map((item, index) => {
   winnersTableBox += `
         <div class="winners-table-body ${
           index === 6 ? "" : "mb-3"
-        } glass-dark" data-aos="fade-up" data-aos-duration="1500">
+        } theme-bg" data-aos="fade-up" data-aos-duration="1500">
           <div class="wt-rank">
             <p><span class="color1-text">#</span> ${item.rank}</p>
           </div>

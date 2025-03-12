@@ -88,14 +88,6 @@ td {
   border: 1px solid #ffffff2e;
   color: #fff;
 }
-.glass-light {
-  background: #31313131;
-
-  backdrop-filter: blur(4px);
-  border-radius: var(--radius);
-  border: 1px solid #ffffff2e;
-  color: #fff;
-}
 .tabs {
   width: 100% !important;
   display: grid;
