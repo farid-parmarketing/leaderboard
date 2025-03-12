@@ -4,14 +4,14 @@ const tabsData = [
     link: "index.html",
     icons: "",
     img: "/assets/roobet/images/tabs/roobet.png",
-    active: true,
+    active: false,
   },
   {
     name: "tab 2",
     link: "raingg.html",
     icons: "",
     img: "/assets/roobet/images/tabs/raingg.png",
-    active: false,
+    active: true,
   },
   {
     name: "tab 3",

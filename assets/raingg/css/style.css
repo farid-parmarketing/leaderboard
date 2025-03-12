@@ -16,18 +16,18 @@ html {
   src: url(../../fonts/tactic.ttf);
 }
 :root {
-  --color1: #eca817;
+  --color1: #daa504;
   --color1Dark: #9c6b00;
   --radius: 6px;
   --transition: all 0.5s ease-in-out;
-  --glassShadow: 0 8px 33px 0 #d211e81f;
+  --glassShadow: 0 8px 33px 0 #eca8171f;
 }
 body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
   background: linear-gradient(180deg, #000000 0%, #0000007e 20%, #000000 100%),
-    url("../../roobet/images/roobet-background.jpg") center / cover no-repeat;
+    url("../../raingg/raingg_background.jpg") center / cover no-repeat;
 }
 img {
   width: 100%;
