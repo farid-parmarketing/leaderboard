@@ -16,8 +16,8 @@ html {
   src: url(../fonts/tactic.ttf);
 }
 :root {
-  --color1: #04f982;
-  --color2: #6762ee;
+  --color1: #eca817;
+  --color1Dark: #9c6b00;
   --radius: 6px;
   --transition: all 0.5s ease-in-out;
 }
@@ -25,9 +25,8 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  background: linear-gradient(to bottom, #00000000 1%, #000000 100%),
-    url("https://farid-parmarketing.github.io/leaderboard/assets/images/background5.jpg")
-      center / cover no-repeat;
+  background: linear-gradient(180deg, #000000 0%, #0000007e 20%, #000000 100%),
+    url("../images/background6.jpg") center / cover no-repeat;
 }
 img {
   width: 100%;
@@ -52,7 +51,7 @@ img {
   font-family: "tactic";
 }
 .nav-login-btn {
-  background: var(--color2);
+  background: var(--color1);
   border-radius: var(--radius);
   cursor: pointer;
   text-transform: uppercase;
@@ -118,7 +117,7 @@ td {
   place-items: center;
 }
 .tabs .tab.active {
-  background: linear-gradient(#00703a, var(--color1));
+  background: linear-gradient(var(--color1Dark), var(--color1));
 }
 .tabs .tab.active img {
   filter: grayscale(1) brightness(100);
@@ -208,15 +207,12 @@ td {
 .color1-text {
   color: var(--color1);
 }
-.color2-text {
-  color: var(--color2);
-}
 .prize-box {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
-  background: var(--color2);
+  background: var(--color1);
   width: 200px;
   padding: 8px;
   border-radius: var(--radius);
@@ -267,7 +263,7 @@ td {
 .social-icons li a {
   width: 40px;
   height: 40px;
-  background: var(--color2);
+  background: var(--color1);
   display: grid;
   place-items: center;
   text-decoration: none;
@@ -289,7 +285,7 @@ footer {
 .prize-money {
   font-size: 3.5rem;
   font-family: "tactic";
-  text-shadow: 0 0 20px #7058f6;
+  text-shadow: 0 0 20px var(--color1);
   width: fit-content;
 }
 .flying-objects-container {

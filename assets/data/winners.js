@@ -112,15 +112,11 @@ winnersData.slice(0, 3).map((item, index) => {
 
         <div class="mt-3">
           <p class="text-uppercase text-muted">wagered</p>
-          <p class="winner-wagered"><span class="color1-text">Rs</span> ${
-            item.wagered
-          }</p>
+          <p class="winner-wagered">Rs ${item.wagered}</p>
         </div>
 
         <div class="prize-box">
-          <p class="winner-wagered"><span class="color1-text">Rs</span> ${
-            item.prize
-          }</p>
+          <p class="winner-wagered">Rs ${item.prize}</p>
         </div>
       </div>
     `;
