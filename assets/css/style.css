@@ -120,6 +120,9 @@ td {
 .tabs .tab.active {
   background: linear-gradient(#00703a, var(--color1));
 }
+.tabs .tab.active img {
+  filter: grayscale(1) brightness(100);
+}
 .tabs .tab h2 {
   text-transform: capitalize;
 }
@@ -281,6 +284,7 @@ footer {
   text-align: center;
   font-size: 8rem;
   font-family: "black_street";
+  padding: 16px 0;
 }
 .prize-money {
   font-size: 3.5rem;
@@ -370,9 +374,6 @@ footer {
   backdrop-filter: blur(4px);
   border-radius: var(--radius);
   border: 1px solid #ffffff2e;
-}
-.modal-content {
-  /* background: #0c121e !important; */
 }
 .modal-header {
   background: transparent !important;

@@ -71,6 +71,7 @@
 @media screen and (max-width: 576px) {
   .main-title {
     font-size: 20vw;
+    padding: 24px 0;
   }
   .flying-objects-container .object {
     width: 150px;
@@ -78,6 +79,9 @@
   }
   .flying-objects-container .object2 {
     top: 150px;
+  }
+  h2 {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 575px) {

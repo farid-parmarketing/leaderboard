@@ -48,9 +48,9 @@ let tabsBox = "";
 
 tabsData.forEach((item) => {
   tabsBox += `
-      <div class="tab ${item.active === true ? "active" : ""}">
+      <a href=${item.link} class="tab ${item.active === true ? "active" : ""}">
           <img src=${item.img} alt="tab-img" />
-      </div>
+      </a>
     `;
 });
 
