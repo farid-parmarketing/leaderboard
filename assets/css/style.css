@@ -371,6 +371,7 @@ footer {
   border: 1px solid transparent;
   font-family: "game_bubble";
   transition: var(--transition);
+  font-size: 16px;
 }
 .glass-hover-button:hover {
   background: #31313131;
