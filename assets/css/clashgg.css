@@ -1,0 +1,9 @@
+body {
+  background: linear-gradient(180deg, #000000 0%, #0000007e 20%, #000000 100%),
+    url("../images/background/clashgg.jpg") center / cover no-repeat;
+}
+:root {
+  --color1: #30f54c;
+  --color1Dark: #007011;
+  --color2: #110f10;
+}

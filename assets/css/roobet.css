@@ -1,0 +1,9 @@
+body {
+  background: linear-gradient(180deg, #000000 0%, #0000007e 20%, #000000 100%),
+    url("../images/background/roobet.jpg") center / cover no-repeat;
+}
+:root {
+  --color1: #eca817;
+  --color1Dark: #694800;
+  --color2: #181729;
+}

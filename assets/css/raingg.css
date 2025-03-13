@@ -1,0 +1,9 @@
+body {
+  background: linear-gradient(180deg, #000000 0%, #0000007e 20%, #000000 100%),
+    url("../images/background/raingg.jpg") center / cover no-repeat;
+}
+:root {
+  --color1: #ec1717;
+  --color1Dark: #7a0000;
+  --color2: #060606;
+}

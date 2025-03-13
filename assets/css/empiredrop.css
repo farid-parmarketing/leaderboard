@@ -1,0 +1,9 @@
+body {
+  background: linear-gradient(180deg, #000000 0%, #0000007e 20%, #000000 100%),
+    url("../images/background/empiredrop.jpg") center / cover no-repeat;
+}
+:root {
+  --color1: #6322f2;
+  --color1Dark: #240070;
+  --color2: #111016;
+}

@@ -1,0 +1,9 @@
+body {
+  background: linear-gradient(180deg, #000000 0%, #0000007e 20%, #000000 100%),
+    url("../images/background/csgobig.jpg") center / cover no-repeat;
+}
+:root {
+  --color1: #f28622;
+  --color1Dark: #773a00;
+  --color2: #090909;
+}
