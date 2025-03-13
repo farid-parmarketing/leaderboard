@@ -3,37 +3,37 @@ const tabsData = [
     name: "tab 1",
     link: "index.html",
     icons: "",
-    img: "/assets/images/tabs/roobet.png",
+    img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/roobet.png",
   },
   {
     name: "tab 2",
     link: "raingg.html",
     icons: "",
-    img: "/assets/images/tabs/raingg.png",
+    img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/raingg.png",
   },
   {
     name: "tab 3",
     link: "clashgg.html",
     icons: "",
-    img: "/assets/images/tabs/clashgg.png",
+    img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/clashgg.png",
   },
   {
     name: "tab 4",
     link: "empiredrop.html",
     icons: "",
-    img: "/assets/images/tabs/empiredrop.png",
+    img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/empiredrop.png",
   },
   {
     name: "tab 5",
     link: "csgobig.html",
     icons: "",
-    img: "/assets/images/tabs/csgobig.png",
+    img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/csgobig.png",
   },
   {
     name: "tab 6",
     link: "casesgg.html",
     icons: "",
-    img: "/assets/images/tabs/casesgg.png",
+    img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/casesgg.png",
   },
 ];
 
@@ -43,12 +43,12 @@ let tabsBox = "";
 // Get current page filename from URL
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-tabsData.forEach((item) => {
+tabsData.forEach((item, index) => {
   // Check if the current tab's link matches the current page
   const isActive = item.link === currentPage ? "active" : "";
 
   tabsBox += `
-        <a href="${item.link}" class="tab ${isActive}">
+        <a href="${item.link}" class="tab ${isActive}" data-index="${index}">
             <img src="${item.img}" alt="tab-img" />
         </a>
       `;
@@ -59,7 +59,9 @@ tabsGrid.innerHTML = tabsBox;
 
 // Initialize Owl Carousel
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  const owl = $(".owl-carousel");
+
+  owl.owlCarousel({
     loop: false,
     margin: 8,
     nav: false,
@@ -72,4 +74,12 @@ $(document).ready(function () {
       1400: { items: 6 },
     },
   });
+
+  // Find the active tab and center it in the carousel
+  setTimeout(() => {
+    const activeTab = $(".tab.active").parent().index();
+    if (activeTab !== -1) {
+      owl.trigger("to.owl.carousel", [activeTab, 300, true]); // Scroll to active tab
+    }
+  }, 500);
 });
