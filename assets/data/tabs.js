@@ -1,36 +1,36 @@
 const tabsData = [
   {
-    name: "tab 1",
+    name: "roobet",
     link: "index.html",
     icons: "",
     img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/roobet.png",
   },
   {
-    name: "tab 2",
+    name: "raingg",
     link: "raingg.html",
     icons: "",
     img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/raingg.png",
   },
   {
-    name: "tab 3",
+    name: "clashgg",
     link: "clashgg.html",
     icons: "",
     img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/clashgg.png",
   },
   {
-    name: "tab 4",
+    name: "empiredrop",
     link: "empiredrop.html",
     icons: "",
     img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/empiredrop.png",
   },
   {
-    name: "tab 5",
+    name: "csgobig",
     link: "csgobig.html",
     icons: "",
     img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/csgobig.png",
   },
   {
-    name: "tab 6",
+    name: "casesgg",
     link: "casesgg.html",
     icons: "",
     img: "https://farid-parmarketing.github.io/leaderboard/assets/images/tabs/casesgg.png",
@@ -48,7 +48,7 @@ tabsData.forEach((item, index) => {
   const isActive = item.link === currentPage ? "active" : "";
 
   tabsBox += `
-        <a href="${item.link}" class="tab ${isActive}" data-index="${index}">
+        <a href="${item.link}" class="tab ${item.name} ${isActive}" data-index="${index}">
             <img src="${item.img}" alt="tab-img" />
         </a>
       `;

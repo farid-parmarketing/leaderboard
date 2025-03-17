@@ -113,11 +113,13 @@ td {
   border-radius: var(--radius);
   display: grid;
   place-items: center;
+  transition: all 1s ease-in-out;
 }
 .tabs .tab.active {
   background: linear-gradient(var(--color1Dark), var(--color1));
 }
-.tabs .tab.active img {
+.tabs .tab.active img,
+.tabs .tab:hover img {
   filter: grayscale(1) brightness(100);
 }
 .tabs .tab h2 {
@@ -511,4 +513,24 @@ footer {
   .prize-money {
     font-size: 2.5rem;
   }
+}
+
+/*  */
+.tabs .roobet:hover {
+  background: linear-gradient(#694800, #eca817);
+}
+.tabs .raingg:hover {
+  background: linear-gradient(#7a0000, #ec1717);
+}
+.tabs .clashgg:hover {
+  background: linear-gradient(#007011, #30f54c);
+}
+.tabs .empiredrop:hover {
+  background: linear-gradient(#240070, #6322f2);
+}
+.tabs .csgobig:hover {
+  background: linear-gradient(#773a00, #f28622);
+}
+.tabs .casesgg:hover {
+  background: linear-gradient(#002f86, #226bf2);
 }
