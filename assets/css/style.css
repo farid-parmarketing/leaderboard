@@ -28,6 +28,30 @@ body {
   height: auto;
   overflow-x: hidden;
 }
+.website {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+  transform-origin: top;
+  z-index: 10;
+  position: relative;
+}
+.website.fade-out {
+  opacity: 0;
+}
+.website.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 img {
   width: 100%;
   height: auto;
