@@ -19,7 +19,9 @@ setInterval(updateTimer, 1000);
 // Run immediately when page loads
 updateTimer();
 
-fetch("http://127.0.0.1:5500/assets/json/clashgg.json")
+fetch(
+  "https://raw.githubusercontent.com/farid-parmarketing/leaderboard/main/assets/json/clashgg.json"
+)
   .then((response) => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
